@@ -19,6 +19,8 @@ Enhanced project demonstrating improved efficiency, algorithmic reasoning, and s
 ### Databases
 Enhanced project demonstrating database integration, query optimization, and structured data management.
 
+[View Database Enhancement](databases.html)
+
 ## Code Review
 A walkthrough video explaining the original artifact, code structure, and planned enhancements will be included here.
 
