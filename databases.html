@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Enhancement - Alex Black</title>
+</head>
+
+<body>
+
+<h1>Enhancement Three: Databases</h1>
+
+<h2>Overview</h2>
+<p>
+This enhancement focuses on improving the database layer of the Travlr full-stack application. 
+The goal was to strengthen data validation, improve data integrity, and optimize how data is stored and accessed.
+</p>
+
+<h2>Artifact Description</h2>
+<p>
+The artifact used for this enhancement is the Travlr full-stack application developed in CS 465. 
+This application uses MongoDB, Express, Node.js, and Angular to manage trip data through RESTful API endpoints.
+</p>
+
+<h2>Enhancements Implemented</h2>
+<ul>
+  <li>Enhanced <b>tripServices.js</b> with data normalization (trimming strings, converting price to number, uppercasing trip codes)</li>
+  <li>Added <b>validation logic</b> for required fields, valid dates, and non-negative pricing</li>
+  <li>Implemented <b>duplicate trip code prevention</b> during create and update operations</li>
+  <li>Updated <b>travlr.js schema</b>:
+    <ul>
+      <li>Converted perPerson from String → Number</li>
+      <li>Added validation rules (required, minlength, min)</li>
+      <li>Maintained index on trip code for performance</li>
+    </ul>
+  </li>
+  <li>Refactored <b>trips.js controller</b>:
+    <ul>
+      <li>Used validated payloads instead of raw request data</li>
+      <li>Improved error handling (400, 404, 500 responses)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Why These Enhancements Matter</h2>
+<ul>
+  <li><b>Data Integrity:</b> Prevents invalid or incomplete data from being stored</li>
+  <li><b>Performance:</b> Indexed queries improve lookup speed</li>
+  <li><b>Security:</b> Validation reduces risk of malformed or harmful input</li>
+  <li><b>Maintainability:</b> Service layer improves code organization</li>
+</ul>
+
+<h2>Course Outcomes Demonstrated</h2>
+<ul>
+  <li>Designed solutions to store, manipulate, and retrieve data</li>
+  <li>Applied database tools (MongoDB, Mongoose)</li>
+  <li>Implemented a security mindset through validation</li>
+  <li>Improved backend architecture and scalability</li>
+</ul>
+
+<h2>Reflection</h2>
+<p>
+This enhancement improved my understanding of how database design impacts performance and reliability. 
+I learned the importance of validating and normalizing data before it reaches the database and ensuring 
+that backend changes do not break existing functionality.
+</p>
+
+<h2>Code Repository</h2>
+<p>
+<a href="https://github.com/YOUR-USERNAME/YOUR-REPO">View Project Code</a>
+</p>
+
+</body>
+</html>
