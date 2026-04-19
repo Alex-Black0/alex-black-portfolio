@@ -1,1 +1,9 @@
+Milestone One: Code Review Narrative
 
+The code review for this project is presented as a video walkthrough available at the following link:
+
+https://youtu.be/BT9wdDrkSKs
+
+This video provides a detailed explanation of the original Travlr application, including its structure, functionality, and areas identified for improvement. The code review highlights key aspects of the application such as backend architecture, data handling, and opportunities for enhancement in software design, algorithms, and database implementation.
+
+The purpose of this code review was to analyze the existing artifact and identify areas for improvement that would later be addressed in the enhancement phases. These enhancements focused on improving modularity, efficiency, data integrity, and overall application structure.
