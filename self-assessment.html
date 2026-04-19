@@ -1,84 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Professional Self-Assessment - Alex Black</title>
+  <title>Software Engineering Enhancement - Alex Black</title>
 </head>
 
 <body>
 
-<h1>Professional Self-Assessment</h1>
+<h1>Enhancement One: Software Engineering and Design</h1>
 
-<h2>Introduction</h2>
+<h2>Overview</h2>
 <p>
-This ePortfolio represents the culmination of my work throughout the SNHU Computer Science program.
-It reflects my growth as a developer and demonstrates my ability to analyze existing systems, improve them through
-targeted enhancements, and communicate those changes in a clear and professional way. The artifacts included in this
-portfolio show my skills in software engineering and design, algorithms and data structures, and databases, while also
-demonstrating my development of a stronger security mindset and a more complete understanding of full-stack software development.
+This enhancement focused on improving the software design and engineering quality of the Travlr full-stack application.
+The primary goal was to make the backend more modular, maintainable, and easier to extend by separating responsibilities
+between controllers and a dedicated service layer.
 </p>
 
-<h2>Collaboration and Communication</h2>
+<h2>Artifact Description</h2>
 <p>
-Throughout the Computer Science program, I strengthened my ability to communicate technical information to different audiences.
-This includes writing narratives, organizing code in a readable way, documenting enhancements clearly, and presenting a code review
-that explains both the original artifact and the planned improvements. These experiences helped me better understand how effective
-communication supports collaboration in software development. In professional settings, developers must be able to explain technical
-decisions to teammates, stakeholders, and users, and this program helped me build that skill through both written and visual communication.
+The artifact used for this enhancement is the Travlr full-stack application developed in CS 465.
+The project uses MongoDB, Express, Angular, and Node.js to manage travel data in a full-stack web application.
+For this enhancement, I improved the backend architecture by restructuring code responsibilities and introducing a more
+maintainable service-based design.
 </p>
 
-<h2>Software Engineering and Design</h2>
+<h2>Enhancements Implemented</h2>
+<ul>
+  <li>Created a dedicated <b>tripService.js</b> file to separate business logic from route controller logic</li>
+  <li>Refactored backend controllers so they call service-layer functions instead of handling all logic directly</li>
+  <li>Improved modularity by assigning clearer responsibilities to controllers, services, and data access logic</li>
+  <li>Reduced code duplication by centralizing reusable trip-related logic in one location</li>
+  <li>Made the backend easier to test, debug, update, and extend in future development</li>
+</ul>
+
+<h2>Impact of Enhancements</h2>
+<ul>
+  <li><b>Modularity:</b> The codebase is better organized because each layer has a more focused responsibility</li>
+  <li><b>Maintainability:</b> Changes to business logic can be made in one place instead of across multiple files</li>
+  <li><b>Scalability:</b> The application structure now supports future enhancements more effectively</li>
+  <li><b>Readability:</b> The backend is easier to understand because the flow of responsibilities is clearer</li>
+</ul>
+
+<h2>Course Outcomes Demonstrated</h2>
+<ul>
+  <li><b>Outcome 1:</b> Supported collaborative development by improving code organization and making project structure easier for others to follow</li>
+  <li><b>Outcome 2:</b> Communicated technical design improvements through clearer architecture, documentation, and code separation</li>
+  <li><b>Outcome 3:</b> Evaluated design trade-offs and improved the application using software engineering principles focused on maintainability and structure</li>
+  <li><b>Outcome 4:</b> Applied well-founded development practices to create a more robust and extensible backend solution</li>
+  <li><b>Outcome 5:</b> Strengthened backend structure in a way that supports safer and more controlled handling of application logic</li>
+</ul>
+
+<h2>Reflection</h2>
 <p>
-My software engineering and design enhancement focused on improving the structure of the Travlr application by creating a service layer
-and refactoring backend controller logic. This change demonstrated my ability to apply modular design principles, separate responsibilities,
-and improve maintainability. It also showed my understanding of scalable architecture and the importance of organizing code in a way that
-supports future development. Through this enhancement, I demonstrated stronger software design practices and a better understanding of
-how thoughtful architecture can improve application quality.
+This enhancement improved my understanding of how software architecture affects long-term maintainability and project quality.
+I learned that separating business logic from controller logic creates a cleaner structure and makes the codebase easier to manage.
+This process reinforced the value of modular design and showed how engineering decisions can improve both developer efficiency
+and the overall quality of an application.
 </p>
 
-<h2>Algorithms and Data Structures</h2>
+<h2>Code Repository</h2>
 <p>
-My algorithms and data structures enhancement focused on improving the efficiency and structure of data handling within the application.
-This work demonstrated my ability to use algorithmic reasoning to improve application behavior, particularly through validation flow,
-duplicate checking, and more efficient lookup patterns. I learned that problem solving in computer science is not limited to isolated
-algorithms, but is also reflected in how applications process, organize, and retrieve data. This enhancement strengthened my ability to
-evaluate trade-offs in logic and efficiency and apply those decisions in a practical development setting.
-</p>
-
-<h2>Databases</h2>
-<p>
-My database enhancement focused on improving data integrity, validation, and storage reliability in the Travlr application.
-I strengthened the Mongoose schema, added validation rules, normalized data before database operations, and improved controller and
-service logic to prevent invalid or duplicate records. This work demonstrated my ability to design and improve database-backed systems
-using tools such as MongoDB and Mongoose. It also reinforced the importance of structured data management and how careful backend
-design supports both performance and long-term maintainability.
-</p>
-
-<h2>Security</h2>
-<p>
-One of the most important lessons I developed throughout the program was the value of a security mindset. Security is not limited to
-one assignment or one course; it affects software architecture, validation, data handling, and user trust. Across my enhancements,
-I applied validation, error handling, and controlled data processing to reduce the likelihood of malformed or harmful input affecting
-the system. My coursework in secure coding further reinforced the importance of anticipating vulnerabilities and addressing them
-through careful design decisions. This portfolio reflects that growth by showing how security considerations were integrated into
-the structure and behavior of the application.
-</p>
-
-<h2>How the Artifacts Fit Together</h2>
-<p>
-The artifacts in this portfolio work together to present a broader picture of my development as a computer science student and
-emerging professional. The software engineering enhancement demonstrates my ability to improve structure and maintainability.
-The algorithms and data structures enhancement demonstrates my ability to reason through efficiency and logic.
-The database enhancement demonstrates my ability to manage and protect data in a full-stack environment.
-Together, these artifacts show that I can evaluate an existing application, identify weaknesses, implement meaningful improvements,
-and explain the value of those improvements in a professional manner.
-</p>
-
-<h2>Conclusion</h2>
-<p>
-Completing this ePortfolio allowed me to reflect on the progress I have made throughout the Computer Science program and better understand
-how my coursework connects to real-world software development. It has strengthened my confidence in my technical skills and in my ability
-to present those skills professionally. This portfolio serves not only as a record of my academic work, but also as a demonstration of
-my readiness to continue growing in the field of computer science.
+<a href="https://github.com/Alex-Black0/CS465" target="_blank">View Project Code</a>
 </p>
 
 </body>
