@@ -1,125 +1,928 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Alex Black - Computer Science ePortfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Alex Black | Software Engineering & Defense Technology</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+
+    nav {
+      background-color: #161b22;
+      border-bottom: 1px solid #30363d;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-name {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: #c9d1d9;
+      font-size: 14px;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 90px 0 70px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #8b949e;
+      margin-top: 0;
+    }
+
+    .hero p {
+      max-width: 850px;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #238636;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+
+    /* General Sections */
+
+    section {
+      padding: 65px 0;
+      border-bottom: 1px solid #30363d;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      margin-top: 0;
+    }
+
+    /* Cards */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    /* Technology Tags */
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: #c9d1d9;
+    }
+
+    /* Experience */
+
+    .experience {
+      margin-bottom: 40px;
+    }
+
+    .experience ul {
+      padding-left: 20px;
+    }
+
+    /* Featured Project */
+
+    .featured {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    /* Footer */
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #8b949e;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
-<h1>Alex Black – Computer Science ePortfolio</h1>
+<!-- ===================== NAVIGATION ===================== -->
 
-<p>
-Welcome to my professional ePortfolio created as part of the SNHU Computer Science Capstone. 
-This portfolio highlights selected projects demonstrating my skills in software engineering, 
-algorithms and data structures, and database development.
-</p>
+<nav>
+  <div class="nav-container">
 
-<hr>
+    <div class="nav-name">
+      Alex Black
+    </div>
 
-<h2>About Me</h2>
-<p>
-I am completing a Bachelor of Science in Computer Science with experience across software engineering, 
-data systems, and full-stack development. My coursework includes projects in algorithms, secure coding, 
-databases, and web application development.
-</p>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#technology">Technology</a>
+      <a href="#projects">Projects</a>
+      <a href="#academic">Academic Work</a>
+      <a href="#contact">Connect</a>
+    </div>
 
-<p>
-This portfolio demonstrates the evolution of my work and the enhancements I have made to improve 
-design, efficiency, and functionality.
-</p>
+  </div>
+</nav>
 
-<hr>
 
-<h2>Portfolio Artifacts</h2>
+<!-- ===================== HERO ===================== -->
 
-<h3>Software Engineering and Design</h3>
-<p>Enhanced project demonstrating improvements in architecture, modularity, and maintainability.</p>
-<p><a href="software-engineering.html">View Software Engineering Enhancement</a></p>
+<header class="hero">
+  <div class="container">
 
-<h3>Algorithms and Data Structures</h3>
-<p>Enhanced project demonstrating improved efficiency, algorithmic reasoning, and structured problem solving.</p>
-<p><a href="algorithms.html">View Algorithms Enhancement</a></p>
+    <h1>Alex Black</h1>
 
-<h3>Databases</h3>
-<p>Enhanced project demonstrating database integration, query optimization, and structured data management.</p>
-<p><a href="databases.html">View Database Enhancement</a></p>
+    <h2>
+      Software Engineering • Defense Technology • Military Operations
+    </h2>
 
-<hr>
+    <p>
+      Senior Implementation Engineer and U.S. Army veteran working at the
+      intersection of software engineering, defense technology, data platforms,
+      AI, and military operations.
+    </p>
 
-<h2>Code Review</h2>
-<p>
-A walkthrough video explaining the original artifact, code structure, and planned enhancements.
-</p>
+    <p>
+      My background spans both sides of defense software: I have used
+      mission systems as a Soldier in operational environments and now work
+      as an engineer designing and implementing software for Army users.
+      I am particularly interested in translating complex operational
+      requirements into intuitive and reliable technical solutions.
+    </p>
 
-<p>
-<a href="https://youtu.be/BT9wdDrkSKs" target="_blank">Watch Code Review Video</a>
-</p>
+    <div class="buttons">
 
-<hr>
+      <a class="button"
+         href="https://github.com/Alex-Black0"
+         target="_blank">
+        GitHub
+      </a>
 
-<h2>Project Narratives</h2>
-<p>
-The following documents provide detailed explanations of each milestone, including design decisions,
-enhancements implemented, and alignment with Computer Science program outcomes.
-</p>
+      <a class="button secondary"
+         href="https://linkedin.com/in/alex-black-a75b109a"
+         target="_blank">
+        LinkedIn
+      </a>
 
-<ul>
-  <li>
-    <b>Milestone One: Code Review</b><br>
-    <a href="https://youtu.be/BT9wdDrkSKs" target="_blank">Watch Code Review Video</a><br>
-    <a href="narratives/milestone-one-code-review.docx" target="_blank">View Narrative</a>
-  </li>
-  <br>
+      <a class="button secondary"
+         href="#projects">
+        View Projects
+      </a>
 
-  <li>
-    <b>Milestone Two: Software Engineering</b><br>
-    <a href="narratives/Milestone Two Narrative.docx" target="_blank">View Narrative</a>
-  </li>
-  <br>
+    </div>
 
-  <li>
-    <b>Milestone Three: Algorithms and Data Structures</b><br>
-    <a href="narratives/Milestone Three - Enhancement Two - Algorithms and Data Structure Narrative.docx" target="_blank">View Narrative</a>
-  </li>
-  <br>
+  </div>
+</header>
 
-  <li>
-    <b>Milestone Four: Databases</b><br>
-    <a href="narratives/Milestone Four - Enhancement Three - Databases - Alex Black.docx" target="_blank">View Narrative</a>
-  </li>
-</ul>
 
-<hr>
+<main>
 
-<h2>Professional Self-Assessment</h2>
-<p>
-This portfolio concludes with a professional self-assessment reflecting on my growth throughout 
-the Computer Science program and how the included artifacts demonstrate the program outcomes.
-</p>
 
-<p>
-<a href="self-assessment.html">View Professional Self-Assessment</a>
-</p>
+<!-- ===================== ABOUT ===================== -->
 
-<hr>
+<section id="about">
+  <div class="container">
 
-<h2>Additional Materials</h2>
-<ul>
-  <li>
-    <a href="https://github.com/Alex-Black0/CS465" target="_blank">
-      Original Project Repository
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/Alex-Black0/CS-465-Enhanced" target="_blank">
-      Enhanced Project Repository
-    </a>
-  </li>
-</ul>
+    <h2>About Me</h2>
 
-<hr>
+    <p>
+      I currently work as a <strong>Senior Implementation Engineer at
+      Foxtrot Services</strong>, supporting U.S. Army organizations through
+      the development and implementation of mission-focused software and
+      data applications.
+    </p>
 
-<p><b>SNHU Computer Science Capstone</b></p>
+    <p>
+      Before transitioning into engineering, I served in the
+      <strong>U.S. Army as an All-Source Intelligence Analyst</strong>,
+      supporting tactical Army organizations, the National
+      Geospatial-Intelligence Agency, and broader Intelligence Community missions.
+    </p>
+
+    <p>
+      My career has given me experience as both an
+      <strong>operational user of defense technology</strong> and an
+      <strong>engineer building technology for military users</strong>.
+      That perspective allows me to communicate effectively between
+      warfighters, technical teams, and organizational leadership.
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== PROFESSIONAL EXPERIENCE ===================== -->
+
+<section id="experience">
+  <div class="container">
+
+    <h2>Professional Background</h2>
+
+
+    <div class="experience">
+
+      <h3>Senior Implementation Engineer — Foxtrot Services</h3>
+
+      <p class="subtitle">
+        Palantir Foundry / Army Vantage • U.S. Army
+      </p>
+
+      <p>
+        I work directly with Army customers to understand operational
+        requirements and translate those requirements into technical solutions
+        built within Palantir Foundry and Army Vantage.
+      </p>
+
+      <ul>
+        <li>Operational application development</li>
+        <li>Ontology and data-model development</li>
+        <li>Workflow automation</li>
+        <li>Data pipeline development and integration</li>
+        <li>Decision-support dashboards and applications</li>
+        <li>Entity resolution and fuzzy string matching</li>
+        <li>Requirements gathering and product discovery</li>
+        <li>Customer training and technical demonstrations</li>
+        <li>Technical troubleshooting and iterative development</li>
+      </ul>
+
+      <p>
+        A major part of my role is serving as a bridge between
+        <strong>military users and engineering teams</strong>, translating
+        Army processes, terminology, and operational requirements into
+        deployable software.
+      </p>
+
+    </div>
+
+
+    <div class="experience">
+
+      <h3>Defense & Intelligence Technology</h3>
+
+      <p class="subtitle">
+        U.S. Army • National Geospatial-Intelligence Agency • Intelligence Community
+      </p>
+
+      <p>
+        Prior to moving fully into software engineering, I worked across Army
+        and Intelligence Community environments supporting intelligence
+        analysis, ISR, targeting, data integration, geospatial intelligence,
+        and emerging technology.
+      </p>
+
+      <p>
+        My operational experience includes participation in
+        <strong>10+ Warfighter Exercises, two National Training Center rotations,
+        and one overseas deployment</strong>.
+      </p>
+
+      <p>
+        Throughout my military and intelligence career I worked with platforms
+        including Palantir, NGA Maven, the Army Intelligence Data Platform,
+        DCGS-A, tactical ISR systems, geospatial platforms, and AI-enabled
+        intelligence applications.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== TECHNOLOGY ===================== -->
+
+<section id="technology">
+  <div class="container">
+
+    <h2>Platforms & Technologies</h2>
+
+    <div class="grid">
+
+
+      <div class="card">
+
+        <h3>Software Development</h3>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Java</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Data & AI</h3>
+
+        <div class="tags">
+          <span class="tag">Palantir Foundry</span>
+          <span class="tag">Army Vantage</span>
+          <span class="tag">NGA Maven</span>
+          <span class="tag">AIDP</span>
+          <span class="tag">Data Pipelines</span>
+          <span class="tag">APIs</span>
+          <span class="tag">Ontology Development</span>
+          <span class="tag">Entity Resolution</span>
+          <span class="tag">Fuzzy Matching</span>
+          <span class="tag">RAG</span>
+          <span class="tag">AI/ML</span>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Mission & Geospatial Systems</h3>
+
+        <div class="tags">
+          <span class="tag">ArcGIS</span>
+          <span class="tag">DCGS-A</span>
+          <span class="tag">ISR Systems</span>
+          <span class="tag">C2 Systems</span>
+          <span class="tag">Operational Data Integration</span>
+          <span class="tag">Decision Support</span>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Interactive & 3D Development</h3>
+
+        <div class="tags">
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">Game Modding</span>
+          <span class="tag">Interactive Mapping</span>
+          <span class="tag">Simulation</span>
+          <span class="tag">UI/UX Prototyping</span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== PERSONAL PROJECT ===================== -->
+
+<section id="projects">
+  <div class="container">
+
+    <h2>Featured Personal Project</h2>
+
+
+    <div class="featured">
+
+      <h3>Star Citizen Interactive Map</h3>
+
+      <p>
+        Outside of professional work, I enjoy gaming, modding, simulation,
+        and developing software around the games I play.
+      </p>
+
+      <p>
+        One of my current projects is an interactive mapping and
+        route-planning application for <strong>Star Citizen</strong>.
+        The project allows me to experiment with spatial applications,
+        route optimization, commodity data, user-interface design,
+        and player-focused software development.
+      </p>
+
+      <h4>Current Features</h4>
+
+      <ul>
+        <li>Interactive map-based navigation</li>
+        <li>Multi-stop route planning</li>
+        <li>Commodity and trade-route tools</li>
+        <li>Ship cargo-capacity configuration</li>
+        <li>Saved commodity runs</li>
+        <li>Player-focused planning utilities</li>
+        <li>Expandable support for additional game data and functionality</li>
+      </ul>
+
+      <p>
+        <a class="button"
+           href="https://github.com/Alex-Black0/Star-Citizen"
+           target="_blank">
+          View Star Citizen Project
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== TECHNICAL INTERESTS ===================== -->
+
+<section>
+  <div class="container">
+
+    <h2>Technical Interests</h2>
+
+    <p>
+      Outside of my professional work, I enjoy experimenting with software,
+      games, simulation technology, and interactive applications.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Gaming & Modding</h3>
+        <p>
+          Gaming, game modification, community-developed tools,
+          and experimentation with game systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Simulation & 3D</h3>
+        <p>
+          Unreal Engine, 3D environments, simulation technology,
+          and interactive visualization.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI & Defense Technology</h3>
+        <p>
+          AI-enabled applications, military simulation, data visualization,
+          and emerging defense software.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== ACADEMIC PORTFOLIO ===================== -->
+
+<section id="academic">
+  <div class="container">
+
+    <h2>Computer Science Portfolio</h2>
+
+    <p>
+      I earned a <strong>Bachelor of Science in Computer Science</strong>
+      from Southern New Hampshire University.
+    </p>
+
+    <p>
+      My collegiate work focused on software engineering, algorithms,
+      data structures, databases, secure coding, and full-stack application
+      development. The projects below demonstrate the academic foundation
+      that complements my professional engineering experience.
+    </p>
+
+
+    <div class="grid">
+
+
+      <div class="card">
+
+        <h3>Software Engineering & Design</h3>
+
+        <p>
+          Application architecture, modularity, maintainability,
+          full-stack development, and software design.
+        </p>
+
+        <p>
+          <a href="software-engineering.html">
+            View Software Engineering Work →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Algorithms & Data Structures</h3>
+
+        <p>
+          Algorithm design, data structures, runtime efficiency,
+          and structured problem solving.
+        </p>
+
+        <p>
+          <a href="algorithms.html">
+            View Algorithms Work →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Database Development</h3>
+
+        <p>
+          Database integration, normalization, indexing,
+          query optimization, and structured data management.
+        </p>
+
+        <p>
+          <a href="databases.html">
+            View Database Work →
+          </a>
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== ACADEMIC NARRATIVES ===================== -->
+
+<section>
+  <div class="container">
+
+    <h2>Academic Project Documentation</h2>
+
+    <p>
+      The following materials were developed during my Computer Science
+      capstone and document the design decisions, enhancements, and technical
+      reasoning behind several academic projects.
+    </p>
+
+
+    <div class="grid">
+
+
+      <div class="card">
+
+        <h3>Code Review</h3>
+
+        <p>
+          Walkthrough of the original application, code structure,
+          and planned enhancements.
+        </p>
+
+        <p>
+          <a href="https://youtu.be/BT9wdDrkSKs"
+             target="_blank">
+            Watch Code Review →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Software Engineering Narrative</h3>
+
+        <p>
+          Documentation covering software architecture and
+          engineering improvements.
+        </p>
+
+        <p>
+          <a href="narratives/Milestone Two Narrative.docx"
+             target="_blank">
+            View Narrative →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Algorithms Narrative</h3>
+
+        <p>
+          Documentation covering algorithm and data structure enhancements.
+        </p>
+
+        <p>
+          <a href="narratives/Milestone Three - Enhancement Two - Algorithms and Data Structure Narrative.docx"
+             target="_blank">
+            View Narrative →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Database Narrative</h3>
+
+        <p>
+          Documentation covering database architecture and optimization.
+        </p>
+
+        <p>
+          <a href="narratives/Milestone Four - Enhancement Three - Databases - Alex Black.docx"
+             target="_blank">
+            View Narrative →
+          </a>
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== SELF ASSESSMENT ===================== -->
+
+<section>
+  <div class="container">
+
+    <h2>Professional Self-Assessment</h2>
+
+    <p>
+      My Computer Science capstone concluded with a professional
+      self-assessment reflecting on the development of my software
+      engineering skills and how my academic work complements my
+      professional and personal development.
+    </p>
+
+    <p>
+      <a href="self-assessment.html">
+        View Professional Self-Assessment →
+      </a>
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== ADDITIONAL PROJECT LINKS ===================== -->
+
+<section>
+  <div class="container">
+
+    <h2>Additional Project Repositories</h2>
+
+    <div class="grid">
+
+
+      <div class="card">
+
+        <h3>Original CS-465 Project</h3>
+
+        <p>
+          <a href="https://github.com/Alex-Black0/CS465"
+             target="_blank">
+            View Repository →
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Enhanced CS-465 Project</h3>
+
+        <p>
+          <a href="https://github.com/Alex-Black0/CS-465-Enhanced"
+             target="_blank">
+            View Repository →
+          </a>
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== EDUCATION ===================== -->
+
+<section>
+  <div class="container">
+
+    <h2>Education</h2>
+
+    <h3>Bachelor of Science in Computer Science</h3>
+    <p class="subtitle">
+      Southern New Hampshire University
+    </p>
+
+    <h3>Associate Degree in Intelligence Studies</h3>
+    <p class="subtitle">
+      Cochise College
+    </p>
+
+  </div>
+</section>
+
+
+
+<!-- ===================== CONNECT ===================== -->
+
+<section id="contact">
+  <div class="container">
+
+    <h2>Connect</h2>
+
+    <p>
+      I am particularly interested in the continued convergence of
+      <strong>software engineering, AI, simulation, gaming technology,
+      and national security.</strong>
+    </p>
+
+    <div class="buttons">
+
+      <a class="button"
+         href="https://github.com/Alex-Black0"
+         target="_blank">
+        GitHub
+      </a>
+
+      <a class="button secondary"
+         href="https://linkedin.com/in/alex-black-a75b109a"
+         target="_blank">
+        LinkedIn
+      </a>
+
+      <a class="button secondary"
+         href="mailto:samuel.a.black1@gmail.com">
+        Email
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+  <p>
+    © 2026 Alex Black
+  </p>
+
+  <p>
+    Software Engineering • Defense Technology • Data & AI
+  </p>
+
+</footer>
+
 
 </body>
 </html>
